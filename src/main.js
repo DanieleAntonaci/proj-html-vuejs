@@ -9,11 +9,24 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faBuildingColumns, faEnvelope, faGraduationCap, faPhoneFlip } from '@fortawesome/free-solid-svg-icons'
+import { faBuildingColumns, faChevronRight, faEnvelope, faGraduationCap, faHouseChimney, faPhoneFlip, } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookF, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faClock as farClock } from '@fortawesome/free-regular-svg-icons'
 
 /* add icons to the library */
-library.add(faPhoneFlip, faEnvelope, faGraduationCap, faBuildingColumns, faFacebookF, faTwitter, faYoutube, faInstagram)
+library.add(
+    faPhoneFlip,
+    faEnvelope,
+    faGraduationCap,
+    faBuildingColumns,
+    faFacebookF,
+    faTwitter,
+    faYoutube,
+    faInstagram,
+    farClock,
+    faHouseChimney,
+    faChevronRight
+)
 
 createApp(App)
     .component('font-awesome-icon', FontAwesomeIcon)

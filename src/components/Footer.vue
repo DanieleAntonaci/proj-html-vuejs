@@ -1,8 +1,9 @@
 <script>
 import JoingForm from './JoingForm.vue';
+import NavFooter from './NavFooter.vue';
 
 export default {
-    components: { JoingForm },
+    components: { JoingForm, NavFooter },
     data() {
         return {
 
@@ -14,6 +15,7 @@ export default {
 <template>
     <div>
         <JoingForm/>
+        <NavFooter/>
     </div>
 </template>
 
