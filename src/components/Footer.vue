@@ -14,11 +14,11 @@ export default {
 </script>
 
 <template>
-    <div>
+    <footer>
         <JoingForm/>
         <NavFooter/>
         <BootomFooter/>
-    </div>
+    </footer>
 </template>
 
 <style lang="scss" scoped>

@@ -1,15 +1,20 @@
 <script>
 import HeroesMain from './HeroesMain.vue';
+import PresentazioneUniversita from './PresentazioneUniversita.vue'
 
 export default {
-    components: { HeroesMain }
+    components: {
+        HeroesMain,
+        PresentazioneUniversita
+    }
 }
 </script>
 
 <template>
-    <div >
+    <main >
         <HeroesMain/>
-    </div>
+        <PresentazioneUniversita/>
+    </main>
 </template>
 
 <style lang="scss" scoped>

@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div id="bg-heroes">
+    <section id="bg-heroes">
             <h1>Inspiring Tomorrows Leaders</h1>
             <h2>
                 The Future Belongs To Those Who See Possibilities Today
@@ -14,7 +14,7 @@ export default {
                 <a href="#" class="course">FIND A COURSE</a>
                 <a href="#" class="apply">APPLY NOW</a>
             </div>
-    </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>

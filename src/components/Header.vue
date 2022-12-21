@@ -8,11 +8,11 @@ export default {
 </script>
 
 <template>
-  <div>
+  <header>
    <HeaderListContact/>
     
    <NavBarHeader/>
-  </div>
+  </header>
 </template>
 
 <style lang="scss" scoped>
