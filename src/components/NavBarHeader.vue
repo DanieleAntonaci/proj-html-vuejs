@@ -89,8 +89,8 @@ export default {
                 margin-left: 10px;
                 font-size: 10px;
                 vertical-align: middle;
-                background-color: #00bcd4;
-                color: white;
+                background-color: $secondaryColor;
+                color: $thirdColor;
                 padding: 3px 6px;
                 border-radius: 3px;
             }

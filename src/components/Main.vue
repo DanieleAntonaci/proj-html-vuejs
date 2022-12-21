@@ -1,12 +1,14 @@
 <script>
-export default {
+import HeroesMain from './HeroesMain.vue';
 
+export default {
+    components: { HeroesMain }
 }
 </script>
 
 <template>
-    <div>
-        
+    <div >
+        <HeroesMain/>
     </div>
 </template>
 
