@@ -133,13 +133,12 @@ export default {
 #bottomFooter {
     max-width: 1300px;
     margin: 0 auto;
-    min-height: 600px;
     background-image: url('/images/university_ft_bg.png');
 
     display: flex;
     justify-content: space-between;
 
-    padding: 30px;
+    padding: 70px 30px 30px;
     font-size: 13px;
 
     &>div {
