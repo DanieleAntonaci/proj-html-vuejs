@@ -43,6 +43,11 @@ form {
         border: 0;
         font-size: 10px;
         vertical-align: middle;
+
+        &:hover {
+            opacity: .8;
+            cursor: pointer;
+        }
     }
 }
 </style>

@@ -32,10 +32,10 @@ export default {
 
 #upperFooter {
     background-color: #333c4e;
-    min-height: 100px;
+
 
     .container {
-        padding: 50px 0;
+        padding: 100px 0;
         text-align: center;
 
         .title-form {

@@ -65,7 +65,7 @@ export default {
 #about-us {
     background-color: #f7f5f4;
     min-height: 100px;
-    padding-bottom: 100px;
+    padding: 60px 0 100px;
 
     .container {
         display: flex;
@@ -122,6 +122,10 @@ export default {
                     background-color: $thirdColor;
                     color: $primaryColor;
                     margin: 10px 0;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
 
                     .icon {
                         padding: 0 15px;

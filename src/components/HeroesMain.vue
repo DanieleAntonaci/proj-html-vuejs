@@ -61,6 +61,10 @@ export default {
             &.apply {
                 background-color: $secondaryColor;
             }
+
+            &:hover {
+                opacity: .8;
+            }
         }
     }
 }

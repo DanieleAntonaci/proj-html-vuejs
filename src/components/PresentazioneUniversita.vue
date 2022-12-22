@@ -24,14 +24,11 @@ export default {
 
                     </p>
                 </div>
-                <!-- <iframe width="520" height="215"
-                  src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                </iframe> -->
+                
+                <!-- <iframe width="740" height="360" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://player.vimeo.com/video/52411719?autoplay=1"></iframe> -->
                 <img src="/images/business_seminar_event_feat-400x268.jpg" alt="">
             </div>
         </div>
-        <!-- <svg class=“fusion-big-triangle-candy” xmlns=“http://www.w3.org/2000/svg” version=“1.1” width=“100%” height=“100” viewBox='0 0 100 100' preserveAspectRatio=“none” fill=“rgba(255,255,255,1)“><path d='M-1 -1 L50 99 L101 -1 Z'></path></svg> -->
-
     </section>
 </template>
 
@@ -40,6 +37,7 @@ export default {
 @use '../style/partials/variables' as *;
 
 section {
+    padding-bottom: 60px;
 
     .title {
         text-align: center;

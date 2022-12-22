@@ -17,7 +17,7 @@ export default {
 </script>
 
 <template>
-    <main >
+    <main>
         <HeroesMain/>
 
         <PresentazioneUniversita/>

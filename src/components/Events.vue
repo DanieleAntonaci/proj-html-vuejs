@@ -57,11 +57,26 @@ export default {
         color: $thirdColor;
         position: relative;
         display: inline-block;
+        overflow: hidden;
 
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+
+            transition: transform 1s ease;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:hover img {
+            transform: scale(1.05);
+        }
+
+        &:hover .text h3 {
+            text-decoration: underline
         }
 
         .text {
@@ -71,6 +86,7 @@ export default {
             transform: translate(-50%, -50%);
 
             text-align: center;
+
 
             h3 {
                 @include differentFont;

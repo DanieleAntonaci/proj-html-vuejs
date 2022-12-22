@@ -85,6 +85,11 @@ export default {
             a {
                 font-weight: 500;
                 color: black;
+                font-size: 13px;
+
+                &:hover {
+                    color: $primaryColor;
+                }
             }
 
             .addictional-elemnt {
