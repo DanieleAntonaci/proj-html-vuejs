@@ -64,7 +64,9 @@ export default {
 @use '../style/partials/mixin' as *;
 @use '../style/partials/variables' as *;
 
+
 .nav-bar {
+
     display: flex;
     justify-content: space-between;
     align-items: center;

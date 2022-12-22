@@ -2,7 +2,7 @@
 import SocialList from './SocialList.vue';
 
 export default {
-    components: { SocialList }
+  components: { SocialList }
 }
 </script>
 
@@ -50,54 +50,52 @@ export default {
 @use '../style/partials/variables' as *;
 
 #contact-hedaer {
-    position: sticky;
-    top: 0;
-    left: 0;
-    height: 50px;
-    background-color: $primaryColor;
 
+  height: 50px;
+  background-color: $primaryColor;
+
+  display: flex;
+
+  .flex-contact-header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    .flex-contact-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .list-contact {
+      display: flex;
 
-        .list-contact {
-            display: flex;
+      li {
+        padding-right: 25px;
 
-            li {
-                padding-right: 25px;
+        a {
+          color: white;
+          font-size: 14px;
 
-                a {
-                    color: white;
-                    font-size: 14px;
+          &:hover {
+            text-decoration: underline;
+          }
 
-                    &:hover {
-                        text-decoration: underline;
-                    }
+          .font-icon {
+            margin-right: 10px;
+          }
 
-                    .font-icon {
-                        margin-right: 10px;
-                    }
+          .hr-box {
+            font-size: 10px;
+            background-color: #e58925;
+            padding: 3px 5px;
+            border-radius: 3px;
 
-                    .hr-box {
-                        font-size: 10px;
-                        background-color: #e58925;
-                        padding: 3px 5px;
-                        border-radius: 3px;
-
-                    }
-                }
-            }
+          }
         }
-
-        .social {
-            display: flex;
-            color: white;
-
-
-        }
+      }
     }
+
+    .social {
+      display: flex;
+      color: white;
+
+
+    }
+  }
 }
 </style>
