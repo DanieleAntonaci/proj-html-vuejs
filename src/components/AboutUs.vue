@@ -75,7 +75,8 @@ export default {
 
 
             h3 {
-                font-family: "Roboto Slab", serif;
+                @include differentFont;
+                font-weight: 500;
             }
 
             &.left {

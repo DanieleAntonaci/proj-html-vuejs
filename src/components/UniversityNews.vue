@@ -46,77 +46,13 @@ export default {
             <div class="contentDivider"></div>
             
             <div class="cardLink">
-                <!-- <div class="card">
-                    <a href="#">
-                        <img src="images/news_single_post_header_1-200x111.jpg" alt="University News">
-                    </a>
-                    <div >
-                        <a href="#" class="titleCard">What do successful grads think you should study?</a>
-                        <div class="date">
-                            By <a href="#">admin</a> March 16th, 2016
-                        </div>
-                    </div>
-                    <div class="readMore">
-                        <a href="#">Reade more 
-                            <font-awesome-icon icon="fa-solid fa-angle-right" />
-                        </a>
-                        <a href="#">
-                            <font-awesome-icon icon="fa-regular fa-comments" />
-                            0
-                        </a>
-                    </div>
-                    
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <img src="images/news_single_post_header_2-400x222.jpg" alt="University News">
-                    </a>
-                    <div >
-                        <a href="#" class="titleCard">Former student discusses success in the fashion industry</a>
-                        <div class="date">
-                            By <a href="#">admin</a> March 16th, 2016
-                        </div>
-                    </div>
-                    <div class="readMore">
-                        <a href="#">Reade more 
-                            <font-awesome-icon icon="fa-solid fa-angle-right" />
-                        </a>
-                        <a href="#">
-                            <font-awesome-icon icon="fa-regular fa-comments" />
-                            0
-                        </a>
-                    </div>
-                    
-                </div>
-                <div class="card">
-                    <a href="#">
-                        <img src="images/news_single_post_header_3-400x222.jpg" alt="University News">
-                    </a>
-                    <div >
-                        <a href="#" class="titleCard">How do you best prepare for university?</a>
-                        <div class="date">
-                            By <a href="#">admin</a> March 16th, 2016
-                        </div>
-                    </div>
-                    <div class="readMore">
-                        <a href="#">Reade more 
-                            <font-awesome-icon icon="fa-solid fa-angle-right" />
-                        </a>
-                        <a href="#">
-                            <font-awesome-icon icon="fa-regular fa-comments" />
-                            0
-                        </a>
-                    </div>
-                    
-                </div> -->
-
 
                 <div class="card" v-for="element in news">
                     <a href="#">
                         <img :src='"images/" + element.img' alt="University News">
                     </a>
                     <div >
-                        <a href="#" class="titleCard">{{ element.title }}</a>
+                        <a href="#" class="title-card">{{ element.title }}</a>
                         <div class="date">
                             By <a :href="element.linkAdmin">admin</a> {{ element.date }}
                         </div>
@@ -148,6 +84,17 @@ export default {
     .title {
         text-align: center;
         margin-bottom: 40px;
+
+        h2 {
+            @include differentFont;
+            font-weight: 500;
+            padding: 20px 0;
+        }
+
+        h4 {
+            font-weight: 300;
+            color: gray;
+        }
     }
 
     .contentDivider {
@@ -183,9 +130,14 @@ export default {
 
             }
 
+            .title-card {
+                @include differentFont;
+            }
+
             .date {
                 font-size: 12px;
                 vertical-align: bottom;
+                padding-top: 5px;
 
                 a {
                     border-right: 1px solid gray;

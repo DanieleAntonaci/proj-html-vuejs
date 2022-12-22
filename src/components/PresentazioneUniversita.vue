@@ -48,7 +48,7 @@ section {
         h2 {
             font-weight: 500;
             padding: 10px 0;
-            font-family: "Roboto Slab", serif;
+            @include differentFont;
         }
 
         h3 {
@@ -76,7 +76,8 @@ section {
             }
 
             h3 {
-                font-family: "Roboto Slab", serif;
+                @include differentFont;
+                font-weight: 500;
             }
 
             p {

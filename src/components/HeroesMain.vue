@@ -33,12 +33,16 @@ export default {
 
     color: $thirdColor;
     line-height: 60px;
-    font-family: "Roboto Slab", serif;
 
     h1 {
         font-size: 60px;
         font-weight: 500;
 
+    }
+
+    h1,
+    h2 {
+        @include differentFont;
     }
 
     div {

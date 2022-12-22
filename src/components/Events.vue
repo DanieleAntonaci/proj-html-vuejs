@@ -72,6 +72,10 @@ export default {
 
             text-align: center;
 
+            h3 {
+                @include differentFont;
+            }
+
             a {
                 color: $thirdColor;
             }
