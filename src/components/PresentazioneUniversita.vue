@@ -51,7 +51,7 @@ section {
 
         h3 {
             font-weight: 400;
-            color: gray;
+            color: $textGray;
         }
     }
 
@@ -79,7 +79,7 @@ section {
             }
 
             p {
-                color: gray;
+                color: $textGray;
                 line-height: 24px;
                 font-size: 14px;
             }

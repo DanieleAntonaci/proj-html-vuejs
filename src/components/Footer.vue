@@ -1,10 +1,10 @@
 <script>
-import BootomFooter from './BootomFooter.vue';
+import BottomFooter from './BottomFooter.vue';
 import JoingForm from './JoingForm.vue';
 import NavFooter from './NavFooter.vue';
 
 export default {
-    components: { JoingForm, NavFooter, BootomFooter },
+    components: { JoingForm, NavFooter, BottomFooter },
     data() {
         return {
 
@@ -17,7 +17,7 @@ export default {
     <footer>
         <JoingForm/>
         <NavFooter/>
-        <BootomFooter/>
+        <BottomFooter/>
     </footer>
 </template>
 

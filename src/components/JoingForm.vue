@@ -72,7 +72,7 @@ export default {
             }
 
             div {
-                color: gray;
+                color: $textGray;
                 opacity: .9;
             }
 

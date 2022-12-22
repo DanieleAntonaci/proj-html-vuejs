@@ -65,7 +65,7 @@ export default {
     .upcoming-event {
         display: flex;
         padding: 20px 0;
-        border-bottom: #767e855a solid 1px;
+        border-bottom: $textGray solid 1px;
 
         .poster-date {
             background-color: $primaryColor;
@@ -96,7 +96,7 @@ export default {
         }
 
         .text {
-            color: #767e85;
+            color: $textGray;
         }
 
     }
@@ -105,7 +105,7 @@ export default {
         color: black;
         padding-top: 20px;
         display: flex;
-        color: #767e85;
+        color: $textGray;
         font-weight: 300;
     }
 

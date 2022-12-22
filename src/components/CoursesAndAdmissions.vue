@@ -94,7 +94,7 @@ div {
 
     a {
         display: flex;
-        color: #767e85;
+        color: $textGray;
         font-weight: 300;
 
         &:hover {

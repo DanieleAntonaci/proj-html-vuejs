@@ -37,7 +37,7 @@ export default {
 @use '../style/partials/variables' as *;
 
 #container {
-    border-top: 1px solid #767e85;
+    border-top: 1px solid $textGray;
 
     div {
         display: flex;
@@ -54,8 +54,12 @@ export default {
             border-right: 1px solid #767e85;
             display: inline;
 
+            &:hover {
+                text-decoration: underline;
+            }
+
             a {
-                color: #767e85;
+                color: $textGray;
 
             }
 
@@ -65,7 +69,7 @@ export default {
         }
 
         .social {
-            color: gray;
+            color: $textGray;
             display: flex;
         }
     }

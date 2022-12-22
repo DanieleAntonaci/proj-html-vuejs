@@ -93,7 +93,7 @@ export default {
 
         h4 {
             font-weight: 300;
-            color: gray;
+            color: $textGray;
         }
     }
 
@@ -140,7 +140,7 @@ export default {
                 padding-top: 5px;
 
                 a {
-                    border-right: 1px solid gray;
+                    border-right: 1px solid $textGray;
                     padding-right: 10px;
                 }
             }

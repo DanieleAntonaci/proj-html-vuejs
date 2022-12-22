@@ -84,7 +84,7 @@ export default {
 
                 p,
                 div {
-                    color: gray;
+                    color: $textGray;
                     line-height: 25px;
 
 
