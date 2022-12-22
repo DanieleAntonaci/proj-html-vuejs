@@ -1,6 +1,35 @@
 <script>
 export default {
-
+    data() {
+        return {
+            news: [
+                {
+                    img: 'news_single_post_header_1-200x111.jpg',
+                    title: 'What do successful grads think you should study?',
+                    linkAdmin: '#',
+                    linkInformation: '#',
+                    numMessage: 0,
+                    date: 'March 16th, 2016'
+                },
+                {
+                    img: 'news_single_post_header_2-400x222.jpg',
+                    title: 'Former student discusses success in the fashion industry',
+                    linkAdmin: '#',
+                    linkInformation: '#',
+                    numMessage: 0,
+                    date: 'March 16th, 2016'
+                },
+                {
+                    img: 'news_single_post_header_3-400x222.jpg',
+                    title: 'How do you best prepare for university?',
+                    linkAdmin: '#',
+                    linkInformation: '#',
+                    numMessage: 0,
+                    date: 'March 16th, 2016'
+                },
+            ]
+        }
+    },
 }
 </script>
 
@@ -17,7 +46,7 @@ export default {
             <div class="contentDivider"></div>
             
             <div class="cardLink">
-                <div class="card">
+                <!-- <div class="card">
                     <a href="#">
                         <img src="images/news_single_post_header_1-200x111.jpg" alt="University News">
                     </a>
@@ -76,6 +105,29 @@ export default {
                         <a href="#">
                             <font-awesome-icon icon="fa-regular fa-comments" />
                             0
+                        </a>
+                    </div>
+                    
+                </div> -->
+
+
+                <div class="card" v-for="element in news">
+                    <a href="#">
+                        <img :src='"images/" + element.img' alt="University News">
+                    </a>
+                    <div >
+                        <a href="#" class="titleCard">{{ element.title }}</a>
+                        <div class="date">
+                            By <a :href="element.linkAdmin">admin</a> {{ element.date }}
+                        </div>
+                    </div>
+                    <div class="readMore">
+                        <a :href="element.linkInformation">Reade more 
+                            <font-awesome-icon icon="fa-solid fa-angle-right" />
+                        </a>
+                        <a href="#">
+                            <font-awesome-icon icon="fa-regular fa-comments" />
+                            {{ element.numMessage }}
                         </a>
                     </div>
                     

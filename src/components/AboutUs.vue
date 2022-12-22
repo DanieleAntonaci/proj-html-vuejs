@@ -1,6 +1,26 @@
 <script>
 export default {
-
+    data() {
+        return {
+            ourValues: [
+                {
+                    text: 'OUR MISSION'
+                },
+                {
+                    text: 'OUR PHILOSOPHY'
+                },
+                {
+                    text: 'OUR COMMITMENT'
+                },
+                {
+                    text: 'OUR PROMISE'
+                },
+                {
+                    text: 'OUR VALUES'
+                },
+            ],
+        }
+    },
 }
 </script>
 <template>
@@ -29,25 +49,10 @@ export default {
 
             <div class="component right">
                 <h3>OUR VALUES</h3>
-                <div class="box">
+               
+                <div class="box" v-for="element in ourValues">
                     <font-awesome-icon icon="fa-solid fa-plus" class="icon"/>
-                    OUR MISSION
-                </div>
-                <div class="box">
-                    <font-awesome-icon icon="fa-solid fa-plus" class="icon"/>
-                    OUR PHILOSOPHY
-                </div>
-                <div class="box">
-                    <font-awesome-icon icon="fa-solid fa-plus" class="icon"/>
-                    OUR COMMITMENT
-                </div>
-                <div class="box">
-                    <font-awesome-icon icon="fa-solid fa-plus" class="icon"/>
-                    OUR PROMISE
-                </div>
-                <div class="box">
-                    <font-awesome-icon icon="fa-solid fa-plus" class="icon"/>
-                    OUR VALUES
+                    {{ element.text }}
                 </div>
             </div>
         </div>

@@ -1,35 +1,42 @@
 <script>
 export default {
-
+    data() {
+        return {
+            cards: [
+                {
+                    text: 'COURSES',
+                    link: '#',
+                    img: 'home_courses_section_bg.jpg'
+                },
+                {
+                    text: 'EVENTS',
+                    link: '#',
+                    img: 'home_events_section_bg.jpg'
+                },
+                {
+                    text: 'LATEST NEWS',
+                    link: '#',
+                    img: 'home_latest_news_section_bg.jpg'
+                },
+            ]
+        }
+    },
 }
 </script>
 
 <template>
     <section id="cards">
-        <div class="card">
-            <img src="/images/home_courses_section_bg.jpg" alt="">
-            <div class="text">
-                <h3>Courses</h3>
-                <div class="divider"></div>
-                <a href="#">View More</a>
-            </div>
-        </div>
-        
-        <div class="card">
-            <img src="/images/home_events_section_bg.jpg" alt="">
-            <div class="text">
-                <h3>EVENTS</h3>
-                <div class="divider"></div>
-                <a href="#">View More</a>
-            </div>
-        </div>
 
-        <div class="card">
-            <img src="/images/home_latest_news_section_bg.jpg" alt="">
+        <div class="card" v-for="element in cards">
+
+            <img :src='"/images/" + element.img' :alt="element.text">
+
             <div class="text">
-                <h3>LATEST NEWS</h3>
+                <h3>{{ element.text }}</h3>
+
                 <div class="divider"></div>
-                <a href="#">View More</a>
+                
+                <a :href="element.link">View More</a>
             </div>
         </div>
 
