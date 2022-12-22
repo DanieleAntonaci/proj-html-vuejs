@@ -21,7 +21,6 @@ export default {
         <HeroesMain/>
         <PresentazioneUniversita/>
         <svg class=“fusion-big-triangle-candy” xmlns=“http://www.w3.org/2000/svg” version=“1.1”  viewBox='0 0 100 10'  fill=“rgba(0,0,0)“><path d='M-1 0 L50 6 L101 0 Z'></path></svg>
-        <!-- <img src="/images/university_ft_bg.png" class="separatore" /> -->
         <AboutUs/>
         <Events/>
         <UniversityNews/>

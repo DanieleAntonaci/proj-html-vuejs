@@ -111,7 +111,6 @@ export default {
         .card {
             background-color: white;
             width: calc((100% / 3) - 20px);
-            height: 300px;
             color: gray;
             margin: 0 10px;
 
@@ -128,7 +127,7 @@ export default {
             }
 
             &>div {
-                padding: 10px;
+                padding: 20px;
 
             }
 
