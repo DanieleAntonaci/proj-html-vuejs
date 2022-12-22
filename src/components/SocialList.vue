@@ -26,6 +26,6 @@ export default {
 @use '../style/partials/variables' as *;
 
 li {
-    margin-left: 10px;
+  margin-left: 15px;
 }
 </style>

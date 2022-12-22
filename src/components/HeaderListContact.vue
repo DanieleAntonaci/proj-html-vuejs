@@ -93,8 +93,6 @@ export default {
     .social {
       display: flex;
       color: white;
-
-
     }
   }
 }

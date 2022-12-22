@@ -37,7 +37,7 @@ export default {
 @use '../style/partials/variables' as *;
 
 section {
-    padding-bottom: 60px;
+    padding: 70px 0 60px;
 
     .title {
         text-align: center;
