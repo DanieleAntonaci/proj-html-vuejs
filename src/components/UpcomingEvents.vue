@@ -63,7 +63,7 @@ export default {
     }
 
     .upcoming-event {
-        display: flex;
+        @include flex('only');
         padding: 20px 0;
         border-bottom: $textGray solid 1px;
 
@@ -81,9 +81,7 @@ export default {
                 height: 50px;
                 color: $primaryColor;
                 font-weight: 400;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex('center');
                 margin-bottom: 7px;
             }
 
@@ -104,7 +102,7 @@ export default {
     a {
         color: black;
         padding-top: 20px;
-        display: flex;
+        @include flex('only');
         color: $textGray;
         font-weight: 300;
     }

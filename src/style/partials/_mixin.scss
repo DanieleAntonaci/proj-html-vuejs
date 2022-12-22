@@ -1,3 +1,19 @@
 @mixin differentFont {
     font-family: "Roboto Slab", serif;
+}
+
+@mixin flex($type) {
+    display: flex;
+    @if $type == "only" {
+    } @else if $type == "s-b" {
+        justify-content: space-between;
+    } @else if $type == "sb-center" {
+        justify-content: space-between;
+        align-items: center;
+    } @else if $type == "center" {
+        justify-content: center;
+        align-items: center;
+    } @else if $type == "around" {
+        justify-content: space-around;
+    }
 } ;

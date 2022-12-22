@@ -74,10 +74,6 @@ div {
         padding-bottom: 20px;
     }
 
-    .contact-university {
-        padding-bottom: 20px;
-    }
-
     &.navBrowswer {
         a {
             line-height: 23px;
@@ -90,7 +86,7 @@ div {
 
 
     a {
-        display: flex;
+        @include flex('only');
         color: $textGray;
         font-weight: 300;
 

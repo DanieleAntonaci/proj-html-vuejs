@@ -93,7 +93,7 @@ div {
 
 
     a {
-        display: flex;
+        @include flex('only');
         color: $textGray;
         font-weight: 300;
 

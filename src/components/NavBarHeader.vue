@@ -66,10 +66,8 @@ export default {
 
 
 .nav-bar {
+    @include flex('sb-center');
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 10px 0;
 
     img {
@@ -77,13 +75,13 @@ export default {
     }
 
     ul {
-        display: flex;
+        @include flex('only');
 
         li {
             margin-left: 30px;
 
             a {
-                font-weight: 500;
+                font-weight: $weight5;
                 color: black;
                 font-size: 13px;
 

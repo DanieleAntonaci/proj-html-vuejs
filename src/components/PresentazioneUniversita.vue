@@ -44,7 +44,7 @@ section {
         margin-top: 40px;
 
         h2 {
-            font-weight: 500;
+            font-weight: $weight5;
             padding: 10px 0;
             @include differentFont;
         }
@@ -62,8 +62,7 @@ section {
     }
 
     .content {
-        display: flex;
-        justify-content: space-around;
+        @include flex('around');
 
         div {
             margin-right: 70px;
@@ -75,7 +74,7 @@ section {
 
             h3 {
                 @include differentFont;
-                font-weight: 500;
+                font-weight: $weight5;
             }
 
             p {

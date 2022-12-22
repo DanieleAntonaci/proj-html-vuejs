@@ -40,10 +40,7 @@ export default {
     border-top: 1px solid $textGray;
 
     div {
-        display: flex;
-        justify-content: space-between;
-
-
+        @include flex('s-b');
         max-width: 1300px;
         margin: 0 auto;
         padding: 30px;
@@ -70,7 +67,7 @@ export default {
 
         .social {
             color: $textGray;
-            display: flex;
+            @include flex('only');
         }
     }
 }

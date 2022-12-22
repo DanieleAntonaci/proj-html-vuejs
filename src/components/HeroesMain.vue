@@ -26,9 +26,7 @@ export default {
     min-height: 700px;
     background-position: center;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex('center');
     flex-direction: column;
 
     color: $thirdColor;
@@ -49,7 +47,7 @@ export default {
         margin-top: 10px;
 
         a {
-            color: white;
+            color: $thirdColor;
             margin: 20px;
             padding: 10px 20px;
             font-size: 14px;

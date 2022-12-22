@@ -55,8 +55,8 @@ div {
     }
 
     a {
-        display: flex;
-        color: #767e85;
+        @include flex('only');
+        color: $textGray;
         font-weight: 300;
 
         &:hover {
@@ -82,13 +82,13 @@ div {
             div {
 
                 line-height: 25px;
-                border-bottom: 1px solid #767e85;
+                border-bottom: 1px solid $textGray;
                 padding-bottom: 10px;
                 color: black;
 
                 .date-post {
                     display: block;
-                    color: #767e85;
+                    color: $textGray;
                 }
             }
         }

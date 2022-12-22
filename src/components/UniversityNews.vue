@@ -108,14 +108,13 @@ export default {
         display: flex;
 
         .card {
-            background-color: white;
+            background-color: $thirdColor;
             width: calc((100% / 3) - 20px);
             color: gray;
             margin: 0 10px;
 
-            display: flex;
+            @include flex('s-b');
             flex-direction: column;
-            justify-content: space-between;
 
             a {
                 color: $primaryColor;
@@ -146,8 +145,7 @@ export default {
             }
 
             .readMore {
-                display: flex;
-                justify-content: space-between;
+                @include flex('s-b');
             }
         }
     }

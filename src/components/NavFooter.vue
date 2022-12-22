@@ -41,8 +41,7 @@ export default {
         max-width: 1300px;
         margin: 0 auto;
 
-        display: flex;
-        justify-content: space-between;
+        @include flex('s-b');
 
         padding: 70px 30px 30px;
         font-size: 13px;

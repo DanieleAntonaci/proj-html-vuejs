@@ -57,18 +57,16 @@ export default {
   display: flex;
 
   .flex-contact-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex('sb-center');
 
     .list-contact {
-      display: flex;
+      @include flex('only');
 
       li {
         padding-right: 25px;
 
         a {
-          color: white;
+          color: $thirdColor;
           font-size: 14px;
 
           &:hover {
@@ -81,7 +79,7 @@ export default {
 
           .hr-box {
             font-size: 10px;
-            background-color: #e58925;
+            background-color: $primaryColor;
             padding: 3px 5px;
             border-radius: 3px;
 
@@ -91,7 +89,8 @@ export default {
     }
 
     .social {
-      display: flex;
+      @include flex('only');
+
       color: white;
     }
   }

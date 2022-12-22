@@ -68,7 +68,7 @@ export default {
     padding: 60px 0 100px;
 
     .container {
-        display: flex;
+        @include flex('only');
 
         .component {
             width: calc(50% - 20px);
@@ -76,7 +76,7 @@ export default {
 
             h3 {
                 @include differentFont;
-                font-weight: 500;
+                font-weight: $weight5;
             }
 
             &.left {
