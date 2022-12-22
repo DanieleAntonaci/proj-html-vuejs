@@ -3,13 +3,15 @@ import AboutUs from './AboutUs.vue';
 import Events from './Events.vue';
 import HeroesMain from './HeroesMain.vue';
 import PresentazioneUniversita from './PresentazioneUniversita.vue'
+import UniversityNews from './UniversityNews.vue';
 
 export default {
     components: {
         HeroesMain,
         PresentazioneUniversita,
         AboutUs,
-        Events
+        Events,
+        UniversityNews
     }
 }
 </script>
@@ -22,6 +24,7 @@ export default {
         <!-- <img src="/images/university_ft_bg.png" class="separatore" /> -->
         <AboutUs/>
         <Events/>
+        <UniversityNews/>
     </main>
 </template>
 

@@ -1,0 +1,152 @@
+<script>
+export default {
+
+}
+</script>
+
+<template>
+    <section class="newsUniversity">
+        <div class="container">
+
+            <div class="title">
+                <img src="/images/page-logo-1.png" alt="Logo Avada">
+                <h2>Today's University News</h2>
+                <h4>Covering Topics From Classes To Politics And Student Organization Events.</h4>
+            </div>
+            
+            <div class="contentDivider"></div>
+            
+            <div class="cardLink">
+                <div class="card">
+                    <a href="#">
+                        <img src="images/news_single_post_header_1-200x111.jpg" alt="University News">
+                    </a>
+                    <div >
+                        <a href="#" class="titleCard">What do successful grads think you should study?</a>
+                        <div class="date">
+                            By <a href="#">admin</a> March 16th, 2016
+                        </div>
+                    </div>
+                    <div class="readMore">
+                        <a href="#">Reade more 
+                            <font-awesome-icon icon="fa-solid fa-angle-right" />
+                        </a>
+                        <a href="#">
+                            <font-awesome-icon icon="fa-regular fa-comments" />
+                            0
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <img src="images/news_single_post_header_2-400x222.jpg" alt="University News">
+                    </a>
+                    <div >
+                        <a href="#" class="titleCard">Former student discusses success in the fashion industry</a>
+                        <div class="date">
+                            By <a href="#">admin</a> March 16th, 2016
+                        </div>
+                    </div>
+                    <div class="readMore">
+                        <a href="#">Reade more 
+                            <font-awesome-icon icon="fa-solid fa-angle-right" />
+                        </a>
+                        <a href="#">
+                            <font-awesome-icon icon="fa-regular fa-comments" />
+                            0
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <a href="#">
+                        <img src="images/news_single_post_header_3-400x222.jpg" alt="University News">
+                    </a>
+                    <div >
+                        <a href="#" class="titleCard">How do you best prepare for university?</a>
+                        <div class="date">
+                            By <a href="#">admin</a> March 16th, 2016
+                        </div>
+                    </div>
+                    <div class="readMore">
+                        <a href="#">Reade more 
+                            <font-awesome-icon icon="fa-solid fa-angle-right" />
+                        </a>
+                        <a href="#">
+                            <font-awesome-icon icon="fa-regular fa-comments" />
+                            0
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+<style lang="scss" scoped>
+@use '../style/partials/mixin' as *;
+@use '../style/partials/variables' as *;
+
+.newsUniversity {
+    background-color: #f7f5f4;
+    padding: 90px 0;
+
+    .title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .contentDivider {
+        width: 200px;
+        border: 1px solid $primaryColor;
+        margin: 40px auto;
+    }
+
+    .cardLink {
+
+        display: flex;
+
+        .card {
+            background-color: white;
+            width: calc((100% / 3) - 20px);
+            height: 300px;
+            color: gray;
+            margin: 0 10px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            a {
+                color: $primaryColor;
+            }
+
+            img {
+                width: 100%;
+            }
+
+            &>div {
+                padding: 10px;
+
+            }
+
+            .date {
+                font-size: 12px;
+                vertical-align: bottom;
+
+                a {
+                    border-right: 1px solid gray;
+                    padding-right: 10px;
+                }
+            }
+
+            .readMore {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+</style>
