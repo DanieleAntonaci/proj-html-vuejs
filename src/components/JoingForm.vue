@@ -14,7 +14,7 @@ export default {
                         <span class="text">
                             500,000 Students
                         </span>
-                        <svg class="line" xmlns=“http://www.w3.org/2000/svg” viewBox='0 0 500 170' preserveAspectRatio=“none”><path d='M8.1,146.2c0,0,140.6-20.6,579-13.8' ></path></svg>
+                        <svg class="line" xmlns=“http://www.w3.org/2000/svg” viewBox='0 0 500 170' preserveAspectRatio=“none”><path d='M8.3,140.2c0,0,200.6-20.6,579-18.8' ></path></svg>
                     </span> 
                 Enjoying Avada Education now</h2>
                 <div>Became Part of Avada University to Further You Career.</div>
@@ -60,7 +60,7 @@ export default {
                         position: absolute;
                         top: 37%;
                         left: 50%;
-                        width: 100%;
+                        width: 220px;
                         height: 80px;
                         transform: translate(-50%, -50%);
                         fill: $primaryColor;
