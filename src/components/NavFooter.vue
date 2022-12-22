@@ -5,6 +5,9 @@ export default {
 </script>
 
 <template>
+    <div class="cotainerBackground">
+
+
     <div id="bottomFooter">
         <div >
             <h4>AVADA UNIVERSITY</h4>
@@ -124,128 +127,133 @@ export default {
             <a href="#">View More...</a>
         </div>
     </div>
+</div>
 </template>
 
 <style lang="scss" scoped>
 @use '../style/partials/mixin' as *;
 @use '../style/partials/variables' as *;
 
-#bottomFooter {
-    max-width: 1300px;
-    margin: 0 auto;
+.cotainerBackground {
     background-image: url('/images/university_ft_bg.png');
+    background-position: -250px;
 
-    display: flex;
-    justify-content: space-between;
 
-    padding: 70px 30px 30px;
-    font-size: 13px;
+    #bottomFooter {
+        max-width: 1300px;
+        margin: 0 auto;
 
-    &>div {
-        width: calc((100% / 5) - 30px);
-        margin: 0 15px;
+        display: flex;
+        justify-content: space-between;
 
-        h4 {
-            padding-bottom: 20px;
-        }
+        padding: 70px 30px 30px;
+        font-size: 13px;
 
-        .contact-university {
-            padding-bottom: 20px;
-        }
+        &>div {
+            width: calc((100% / 5) - 30px);
+            margin: 0 15px;
 
-        a {
-            display: flex;
-            color: #767e85;
-            font-weight: 300;
-
-            .font-icon {
-                padding-right: 10px;
+            h4 {
+                padding-bottom: 20px;
             }
-        }
 
-        &.navBrowswer {
+            .contact-university {
+                padding-bottom: 20px;
+            }
+
             a {
-                line-height: 23px;
-            }
-        }
+                display: flex;
+                color: #767e85;
+                font-weight: 300;
 
-        #secondNavElement {
-            padding-top: 30px;
-        }
-    }
-
-    #recent-posts {
-        a {
-            align-items: baseline;
-            padding-top: 10px;
-
-            .font-icon {
-                font-size: 10px;
-                vertical-align: baseline;
-            }
-
-            div {
-
-                line-height: 25px;
-                border-bottom: 1px solid #767e85;
-                padding-bottom: 10px;
-                color: black;
-
-                .date-post {
-                    display: block;
-                    color: #767e85;
+                .font-icon {
+                    padding-right: 10px;
                 }
             }
+
+            &.navBrowswer {
+                a {
+                    line-height: 23px;
+                }
+            }
+
+            #secondNavElement {
+                padding-top: 30px;
+            }
         }
-    }
 
-    #upcoming-events {
+        #recent-posts {
+            a {
+                align-items: baseline;
+                padding-top: 10px;
 
-
-        .upcoming-event {
-            display: flex;
-            padding: 20px 0;
-            border-bottom: #767e855a solid 1px;
-
-            .poster-date {
-                background-color: $primaryColor;
-                width: 70px;
-                height: 90px;
-                text-align: center;
-                padding: 5px;
-                margin-right: 20px;
+                .font-icon {
+                    font-size: 10px;
+                    vertical-align: baseline;
+                }
 
                 div {
-                    background-color: #eff0f2;
-                    width: 60px;
-                    height: 50px;
-                    color: $primaryColor;
-                    font-weight: 400;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-bottom: 7px;
-                }
 
-                span {
-                    color: $thirdColor;
-                    font-size: 18px;
-                    font-weight: 500;
+                    line-height: 25px;
+                    border-bottom: 1px solid #767e85;
+                    padding-bottom: 10px;
+                    color: black;
 
+                    .date-post {
+                        display: block;
+                        color: #767e85;
+                    }
                 }
             }
-
-            .text {
-                color: #767e85;
-            }
-
         }
 
-        a {
-            color: black;
-            padding-top: 20px;
+        #upcoming-events {
+
+
+            .upcoming-event {
+                display: flex;
+                padding: 20px 0;
+                border-bottom: #767e855a solid 1px;
+
+                .poster-date {
+                    background-color: $primaryColor;
+                    width: 70px;
+                    height: 90px;
+                    text-align: center;
+                    padding: 5px;
+                    margin-right: 20px;
+
+                    div {
+                        background-color: #eff0f2;
+                        width: 60px;
+                        height: 50px;
+                        color: $primaryColor;
+                        font-weight: 400;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 7px;
+                    }
+
+                    span {
+                        color: $thirdColor;
+                        font-size: 18px;
+                        font-weight: 500;
+
+                    }
+                }
+
+                .text {
+                    color: #767e85;
+                }
+
+            }
+
+            a {
+                color: black;
+                padding-top: 20px;
+            }
         }
     }
-
 }
 </style>
