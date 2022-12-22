@@ -1,0 +1,81 @@
+<script>
+export default {
+
+}
+</script>
+
+<template>
+    <section id="cards">
+        <div class="card">
+            <img src="/images/home_courses_section_bg.jpg" alt="">
+            <div class="text">
+                <h3>Courses</h3>
+                <div class="divider"></div>
+                <a href="#">View More</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img src="/images/home_events_section_bg.jpg" alt="">
+            <div class="text">
+                <h3>EVENTS</h3>
+                <div class="divider"></div>
+                <a href="#">View More</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="/images/home_latest_news_section_bg.jpg" alt="">
+            <div class="text">
+                <h3>LATEST NEWS</h3>
+                <div class="divider"></div>
+                <a href="#">View More</a>
+            </div>
+        </div>
+
+    </section>
+</template>
+
+<style lang="scss" scoped>
+@use '../style/partials/mixin' as *;
+@use '../style/partials/variables' as *;
+
+#cards {
+    min-height: 200px;
+    max-width: 1700px;
+
+    .card {
+        width: calc(100% /3);
+        height: calc(100vw / 3);
+        color: $thirdColor;
+        position: relative;
+        display: inline-block;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            text-align: center;
+
+            a {
+                color: $thirdColor;
+            }
+
+
+            .divider {
+                width: 50px;
+                border: 1px solid $primaryColor;
+                margin: 40px auto;
+            }
+        }
+    }
+}
+</style>

@@ -6,6 +6,8 @@ export default {
 <template>
     <div id="about-us">
         <div class="container">
+
+            
             <div class="component left">
                 <h3>WORLD CLASS FACILITIES</h3>
                 <p>Avada University is devoted to excellence in teaching, learning, and research, and developing leaders in many disciplines who make a difference globally.</p>
@@ -23,8 +25,30 @@ export default {
                 </div>
                 <p>If you prefer to study in your own time and at your own speed then one of our e-learning packages may be right up your street.</p>
             </div>
+
+
             <div class="component right">
                 <h3>OUR VALUES</h3>
+                <div class="box">
+                    <font-awesome-icon icon="fa-solid fa-plus" class="icon"/>
+                    OUR MISSION
+                </div>
+                <div class="box">
+                    <font-awesome-icon icon="fa-solid fa-plus" class="icon"/>
+                    OUR PHILOSOPHY
+                </div>
+                <div class="box">
+                    <font-awesome-icon icon="fa-solid fa-plus" class="icon"/>
+                    OUR COMMITMENT
+                </div>
+                <div class="box">
+                    <font-awesome-icon icon="fa-solid fa-plus" class="icon"/>
+                    OUR PROMISE
+                </div>
+                <div class="box">
+                    <font-awesome-icon icon="fa-solid fa-plus" class="icon"/>
+                    OUR VALUES
+                </div>
             </div>
         </div>
     </div>
@@ -36,7 +60,7 @@ export default {
 #about-us {
     background-color: #f7f5f4;
     min-height: 100px;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 
     .container {
         display: flex;
@@ -81,6 +105,22 @@ export default {
 
             &.right {
                 margin-left: 20px;
+
+                h3 {
+                    padding-bottom: 10px;
+                }
+
+                .box {
+                    width: 100%;
+                    padding: 15px;
+                    background-color: $thirdColor;
+                    color: $primaryColor;
+                    margin: 10px 0;
+
+                    .icon {
+                        padding: 0 15px;
+                    }
+                }
             }
         }
     }
